@@ -18,7 +18,7 @@ while True:
         marks=int(input("enter marks "))
         cur.execute("insert into student values({},'{}',{})".format(roll,name,marks))
         con.commit()
-        print("row interest successfully. . .")
+        print("row insert successfully. . .")
     elif choice==2:
         roll=int(input("enter roll number to find :"))
         cur.execute("select*from student where roll={}".format(roll))
